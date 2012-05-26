@@ -27,24 +27,26 @@
 		return false;
 	}%>
 	<div>
-		Welcome
-		<%=user.getLoginId()%></div>
-	<div><form name="logout" action="/SellerAssign/login/logOut.jsp" method="post">
-		<input type="submit" name="Logout" value="Logout" />
+		Welcome <strong> <%=user.getLoginId()%></strong>
+	</div>
+	<div style="margin-left: 300px; float: left; disply: block;">
+		<form name="logout" action="/SellerAssign/login/logOut.jsp"
+			method="post">
+			<input type="submit" name="Logout" value="Logout" />
 		</form>
 	</div>
 	<form name="updateUser" method="post"
 		action="/SellerAssign/updateUserData">
-		<div style="margin-left: 20px; width: 200px;" class="floatLeft">
+		<div class="floatLeft" style="margin-left: 20px; width: 100px;">
 			Login Id :</div>
-		<div style="margin-left: 10px; width: 300px" class="floatLeft">
+		<div class="floatLeft" style="margin-left: 10px; width: 300px">
 			<input type="text" name="userName" value="<%=user.getLoginId()%>">
 		</div>
 		<div class="clearFloat"></div>
-		<input type="hidden" name="userid" value=<%=user.getId()%>>
-		<div style="margin-left: 20px; width: 200px;" class="floatLeft">
+		<input type="hidden" class="floatLeft" name="userid" value=<%=user.getId()%>>
+		<div class="floatLeft" style="margin-left: 20px; width: 100px;">
 			Password :</div>
-		<div style="margin-left: 10px; width: 300px" class="floatLeft">
+		<div class="floatLeft" style="margin-left: 10px; width: 300px">
 			<input type="password" name="password"
 				value="<%=user.getPassword()%>">
 		</div>
@@ -65,10 +67,10 @@
 			}
 			}
 		%>
-
+		<div class="clearFloat" /></div>
 		<input type="submit" value="update"
-			style="margin-left: 100px; margin-top: 10px;">
-	</div>
+			style="margin-left: 100px; margin-top: 20px;">
+		</div>
 	</form>
 </body>
 </html>

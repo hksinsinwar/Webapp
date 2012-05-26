@@ -12,20 +12,20 @@
 	<div>Login to continue</div>
 	<form name="loginForm" method="post"
 		action="/SellerAssign/loginServlet">
-		<div style="margin-left: 20px; width: 200px;" class="floatLeft">
+		<div style="margin-left: 20px; width: 100px;" class="floatLeft">
 			Login Id :</div>
 		<div style="margin-left: 10px; width: 300px" class="floatLeft">
 			<input type="text" name="userName" class="floatLeft">
 		</div>
 		<div class="clearFloat"></div>
-		<div style="margin-left: 20px; width: 200px;" class="floatLeft">
+		<div style="margin-left: 20px; width: 100px;" class="floatLeft">
 			Password :</div>
 		<div style="margin-left: 10px; width: 300px" class="floatLeft">
 			<input type="password" name="password" class="floatLeft">
 		</div>
 		<div class="clearFloat"></div>
 		<div>
-			<input type="submit" value="login">
+			<input type="submit" value="login" style="margin-left:100px;margin-top:20px;width:100px;">
 		</div>
 	</form>
 </body>
